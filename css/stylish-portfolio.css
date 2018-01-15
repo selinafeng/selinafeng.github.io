@@ -290,3 +290,6 @@ a {
 
 .text-secondary {
   color: #ecb807 !important; }
+
+.courses {
+  list-style-type: none; }
