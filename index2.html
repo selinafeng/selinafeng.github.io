@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Selina Feng Website</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body, html {
+          height: 100%;
+          font-family: 'Lato', sans-serif;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      img {
+        object-fit: cover;
+      }
+
+      img.profile {
+        display: block;
+        height: 2.5em;
+        width: 2.5em;
+        border-radius: 50%;
+        margin: auto;
+      }
+
+      img.secondary {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+      }
+
+      :root {
+        --color1: #4a4e4d; /* blackish */
+        --color2: #0e9aa7; /* darker turquoise */
+        --color3: #3da4ab; /* lighter turquoise */
+        --color4: #f6cd61; /* yellow */
+        --color5: #fe8a71; /* peachy orange */
+      }
+
+      .parallax {
+          /* The image used */
+          background-image: url('./img/Selina_Swing.JPG');
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+
+      .parallax2 {
+          /* The image used */
+          background-image: url('./img/ocean.JPG');
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+
+      .parallax-height-tall {
+        /* Full height */
+        height: 100%;
+      }
+
+      .parallax-height-short {
+        height: 50%
+      }
+
+      .emphasized-text {
+        color: var(--color4);
+      }
+
+      .banner1 {
+        min-height: 40%;
+        background-color: var(--color2);
+        font-size: 2em;
+        padding: 4em 3em 4em 3em;
+        text-align: center;
+      }
+      .banner1:hover {
+        background-color: var(--color3);
+      }
+
+      .btn-connect {
+        background-color: var(--color5);
+        border: var(--color5);
+      }
+      .btn-connect:hover {
+        background-color: var(--color4);
+        border: var(--color4);
+      }
+
+
+      .banner2 {
+        min-height: 50%;
+        /* background-image: url('./img/ocean.JPG'); */
+        /* background-color: white; */
+        font-size: 2em;
+        text-align: center;
+      }
+
+      /* Centered text */
+      .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+
+      .horizontal-center {
+        margin-left: 40%;
+        margin-right: 50%;
+      }
+
+      .name-intro {
+        font-size: 8em;
+        color: white;
+      }
+
+      .section-header {
+        padding-top: 2em;
+        font-size: 4em;
+        color: white;
+        text-align: center;
+      }
+
+      .container {
+        position: relative;
+        width: 24px;
+        height: 24px;
+      }
+
+      .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+      }
+
+      .chevron:first-child {
+        animation: move 3s ease-out 1s infinite;
+      }
+
+      .chevron:nth-child(2) {
+        animation: move 3s ease-out 2s infinite;
+      }
+
+      .chevron:before,
+      .chevron:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 51%;
+        background: #fff;
+      }
+
+      .chevron:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
+      }
+
+      .chevron:after {
+        right: 0;
+        width: 50%;
+        transform: skew(0deg, -30deg);
+      }
+
+      @keyframes move {
+        25% {
+          opacity: 1;
+
+        }
+        33% {
+          opacity: 1;
+          transform: translateY(30px);
+        }
+        67% {
+          opacity: 1;
+          transform: translateY(40px);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+        }
+      }
+
+      @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+
+      .text {
+        display: block;
+        /* margin-top: 75px;
+        margin-left: -30px; */
+        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        color: #fff;
+        white-space: nowrap;
+        /* opacity: .25; */
+        /* animation: pulse 2s linear alternate infinite; */
+      }
+
+      @keyframes pulse {
+        to {
+          opacity: 1;
+        }
+      }
+
+      .zoom {
+        display: inline-block;
+        padding: auto;
+        background-color: var(--color2);
+        transition: transform .3s;
+        width: 200px;
+        height: 200px;
+        margin: 2em 2em;
+      }
+
+      .zoom:hover {
+        background-color: var(--color3);
+        -ms-transform: scale(2); /* IE 9 */
+        -webkit-transform: scale(2); /* Safari 3-8 */
+        transform: scale(2);
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="parallax parallax-height-tall">
+      <div class="name-intro centered">
+        <img src="./img/profile.jpg" alt="Profile" class="profile">
+        <div class="text">
+          hi, i'm selina feng
+        </div>
+        <div class="container">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <span class="text"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner1">
+      <p>
+        Hello! My name is <span class="emphasized-text">Selina</span>, and I'm sophomore at <span class="emphasized-text">UC Berkeley</span> studying
+        <span class="emphasized-text">Computer Science</span>. I'm passionate about leveraging technology to expand horizons for everyone
+        and changing the way that ideas are exchanged.<br><br>
+      </p>
+      <div style="padding: 10px">
+        <p>Let's connect!</p>
+      </div>
+      <span>
+        <a href="https://www.linkedin.com/in/selina-feng" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg btn-connect" role="button">
+          <span class="fa fa-linkedin-square"></span>
+          &nbsp;LinkedIn
+        </a>
+        <a href="https://github.com/selinafeng" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg btn-connect" role="button">
+          <span class="fa fa-github"></span>
+          &nbsp;GitHub
+        </a>
+        <a href="https://drive.google.com/file/d/1p8IuR6EcD2Ph5IDtH3PjWOqp93Va9Cd1/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg btn-connect" role="button">
+          <span class="glyphicon glyphicon-paperclip"></span>
+          &nbsp;Resume
+        </a>
+        <a href="mailto:selina.feng@berkeley.edu" class="btn btn-info btn-lg btn-connect" role="button">
+          <span class="glyphicon glyphicon-envelope"></span>
+          &nbsp;Email Me
+        </a>
+    </div>
+
+    <div class="parallax2 parallax-height-short">
+      <div class="section-header">
+        <p>SCHOOL</p>
+      </div>
+    </div>
+
+    <div class="banner2">
+      <div class="zoom text">
+        <p style="font-size: 0.5em; ">CLASSES</p>
+      </div>
+      <div class="zoom text">
+        <p>CODEBASE</p>
+      </div>
+      <div class="zoom text">
+        <p>CAL HACKS</p>
+      </div>
+      <div class="zoom text">
+        <p>INTERNING</p>
+      </div>
+    </div>
+
+    <div class="banner3">
+
+    </div>
+
+    <div class="parallax parallax-height-short"></div>
+
+  </body>
+</html>
