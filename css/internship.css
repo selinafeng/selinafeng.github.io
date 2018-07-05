@@ -9,9 +9,6 @@
   background-color:white;
   padding:20px;
 }
-.idk::before {
-  max-height: 100px;
-  max-width: 100px;
+/* .idk::before {
   content: url("../img/raiseme-logo.png");
-  display: inline-block;
-}
+} */
