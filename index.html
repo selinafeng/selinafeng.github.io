@@ -21,131 +21,173 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylish-portfolio.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/parallax.css">
+    <link rel="stylesheet" type="text/css" href="css/images.css">
+    <link rel="stylesheet" type="text/css" href="css/chevron-animations.css">
+    <link rel="stylesheet" type="text/css" href="css/banner.css">
+    <link rel="stylesheet" type="text/css" href="css/activities.css">
+    <link rel="stylesheet" type="text/css" href="css/internship.css">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type = "text/javascript" src="js/index.js"></script>
+    <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
   </head>
-
-  <body id="page-top">
-    <!-- Under Construction Banner --> 
-    <h3 style="text-align: center;">Thanks for visiting! This website is under construction.</h3>
-    <!-- Navigation -->
-    <a class="menu-toggle rounded" href="#">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top"></a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#page-top">Home</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Header -->
-    <header class="masthead d-flex">
-      <div class="container text-center my-auto">
-        <h1 class="mb-1">Selina Feng</h1>
-        <h3 class="mb-5">
-          <em>Student, Developer, Volunteer</em>
-        </h3>
-        <a class="btn btn-primary btn-lg js-scroll-trigger" href="#about">About Me</a>
-        <a class="btn btn-primary btn-lg js-scroll-trigger" href="https://drive.google.com/file/d/1c0i7i2ZdhiGIbnfLt4vePFp1N4MeBn0v/view?usp=sharing">Resume</a>
-        <a class="btn btn-primary btn-lg js-scroll-trigger" href="https://www.linkedin.com/in/selina-feng">LinkedIn</a>
-        <a class="btn btn-primary btn-lg js-scroll-trigger" href="https://github.com/selinafeng">GitHub</a>
-        <a class="btn btn-primary btn-lg js-scroll-trigger" href="#contact">Contact Me!</a>
+  <body onload="typeName()">
+    <div class="parallax parallax-height-tall">
+      <div class="name-intro centered">
+        <img src="./img/profile.jpg" alt="Profile" class="profile">
+        <div id="name-text" class="text"></div>
+        <div class="container">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <span class="text"></span>
+        </div>
       </div>
-      <div class="overlay"></div>
-    </header>
+    </div>
 
-    <!-- About -->
-    <section class="content-section bg-light" id="about">
-      <div class="container text-center">
+    <div class="banner1">
+      <p>
+        Hello! My name is <span class="emphasized-text">Selina Feng</span> and I'm a sophomore at <span class="emphasized-text">UC Berkeley</span> studying
+        <span class="emphasized-text">Computer Science</span>. I'm passionate about leveraging technology to expand horizons for everyone
+        and changing the way that ideas are exchanged.<br><br>
+      </p>
+      <div style="padding: 10px">
+        <p>Let's connect!</p>
+      </div>
+      <span>
+        <a href="https://www.linkedin.com/in/selina-feng" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg btn-connect" role="button">
+          <span class="fa fa-linkedin-square"></span>
+          &nbsp;LinkedIn
+        </a>
+        <a href="https://github.com/selinafeng" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg btn-connect" role="button">
+          <span class="fa fa-github"></span>
+          &nbsp;GitHub
+        </a>
+        <a href="https://drive.google.com/file/d/1p8IuR6EcD2Ph5IDtH3PjWOqp93Va9Cd1/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg btn-connect" role="button">
+          <span class="glyphicon glyphicon-paperclip"></span>
+          &nbsp;Resume
+        </a>
+        <a href="mailto:selina.feng@berkeley.edu" class="btn btn-info btn-lg btn-connect" role="button">
+          <span class="glyphicon glyphicon-envelope"></span>
+          &nbsp;Email Me
+        </a>
+    </div>
+
+    <div class="parallax2 parallax-height-short">
+      <div class="section-header">
+        <p>SCHOOL</p>
+      </div>
+    </div>
+
+    <div class="banner2">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2>Hi there!</h2>
-            <p class="lead mb-5">I'm a first-year Computer Science student at UC Berkeley. I'm passionate about technology that challenges the status quo for individuals and communities. In my free time, I work on personal projects, play tennis, and watch Grey's Anatomy!</p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#academics">My Academics</a>
+          <div class="col-sm-4" style="background-color:var(--color3)">
+            <div class="align-items-center"
+            style="max-width:400px;float: none; margin: 0 auto;margin-top:3em;margin-bottom:3em;">
+              <div style="font-size:30px">
+                Academics
+              </div>
+              <div style="max-width:400px;height:500px;overflow-y:scroll;font-size:20px;">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS 61A</h5>
+                      <small class="text-muted">Fall 2017</small>
+                    </div>
+                    <p class="mb-1">Structure and Interpretation of Computer Programs</p>
+                    <small class="text-muted">Python, SQL, Scheme</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS 61B</h5>
+                      <small class="text-muted">Spring 2018</small>
+                    </div>
+                    <p class="mb-1">Data Structures</p>
+                    <small class="text-muted">Java, sorting, algorithms</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS 70</h5>
+                      <small class="text-muted">Fall 2018</small>
+                    </div>
+                    <p class="mb-1">Discrete Math and Probability Theory</p>
+                    <small class="text-muted">proofs, theorems, probability</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS C8</h5>
+                      <small class="text-muted">Fall 2018</small>
+                    </div>
+                    <p class="mb-1">Foundations of Data Science</p>
+                    <small class="text-muted">statistical inference, programming, real-world data analysis</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">EE 16A</h5>
+                      <small class="text-muted">Fall 2017</small>
+                    </div>
+                    <p class="mb-1">Designing Information Devices and Systems I</p>
+                    <small class="text-muted">circuits, op-amps, linear algebra</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">EE 16B</h5>
+                      <small class="text-muted">Fall 2018</small>
+                    </div>
+                    <p class="mb-1">Designing Information Devices and Systems II</p>
+                    <small class="text-muted">circuits, transistors, differential equations</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS 198</h5>
+                      <small class="text-muted">Fall 2017</small>
+                    </div>
+                    <p class="mb-1">Ruby on Rails DeCal</p>
+                    <small class="text-muted">student taught class on RoR web development</small>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8" style="background-color:var(--color4);">
+            <div class="internship-row row">
+              <div class="internship col-sm-8">
+                <div class="idk" style="display:inline-block">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1" style="float:left;">Internship</h5>
+                    <small class="text-muted">Jun. 2018 - Aug. 2018</small>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Full Stack Engineering Intern at RaiseMe</h4>
+                    <small class="text-muted" style="float:left; text-align:left;">
+                      	Create a tool that classifies and standardizes the names of extracurricular activities, helping 1,300,000 students and 285 college partners connect to award students with scholarships for college<br>
+                      	Write and run scripts that updated data in the production database<br>
+                      	Update sign-up process for student users in accordance with European GDPR regulations<br>
+                      	Create an accessible user experience for users via front-end development with React and HTML/CSS<br>
+                      	Technologies used: Ruby on Rails, React, Node.js, MongoDB
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Portfolio -->
-    <section class="content-section" id="portfolio">
-      <div class="container">
-        <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Recent Projects</h2>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://github.com/AdoptDontShop/AdoptDontShop">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Adopt Don't Shop</h2>
-                  <p class="mb-0">Ruby on Rails web application for animal lovers to "favorite" pets posted by animal shelters.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/dog-adopt.jpg" alt="A cute puppy">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="https://github.com/selinafeng/my-journal">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>MyJournal</h2>
-                  <p class="mb-0">A Ruby on Rails web application for journaling.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="banner3">
 
-    <!-- Footer -->
-    <footer class="footer text-center" id="contact">
-      <div>
-        <a href="mailto:selina.feng@berkeley.edu" role="button" class="btn btn-info">
-          <span class="glyphicon glyphicon-envelope"></span> Email
-        </a>
-        <a href="https://www.linkedin.com/in/selina-feng/" role="button" class="btn btn-info">
-          <span class="glyphicon glyphicon-link"></span> LinkedIn
-        </a>
-      <div>
-      <p> </p>
-      <div class="container">
-        <p class="text-muted small mb-0">Copyright &copy; Selina Feng 2017</p>
-      </div>
-    </footer>
+    </div>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fa fa-angle-up"></i>
-    </a>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
+    <div class="parallax parallax-height-short"></div>
 
   </body>
-
 </html>

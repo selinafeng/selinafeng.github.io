@@ -21,249 +21,28 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylish-portfolio.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/parallax.css">
+    <link rel="stylesheet" type="text/css" href="css/images.css">
+    <link rel="stylesheet" type="text/css" href="css/chevron-animations.css">
+    <link rel="stylesheet" type="text/css" href="css/banner.css">
+    <link rel="stylesheet" type="text/css" href="css/activities.css">
+    <link rel="stylesheet" type="text/css" href="css/internship.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body, html {
-          height: 100%;
-          font-family: 'Lato', sans-serif;
-      }
 
-      p {
-        font-size: 1em;
-      }
-
-      img {
-        object-fit: cover;
-      }
-
-      img.profile {
-        display: block;
-        height: 2.5em;
-        width: 2.5em;
-        border-radius: 50%;
-        margin: auto;
-      }
-
-      img.secondary {
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        opacity: 0.5;
-      }
-
-      :root {
-        --color1: #4a4e4d; /* blackish */
-        --color2: #0e9aa7; /* darker turquoise */
-        --color3: #3da4ab; /* lighter turquoise */
-        --color4: #f6cd61; /* yellow */
-        --color5: #fe8a71; /* peachy orange */
-      }
-
-      .parallax {
-          /* The image used */
-          background-image: url('./img/Selina_Swing.JPG');
-
-          /* Create the parallax scrolling effect */
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-      }
-
-      .parallax2 {
-          /* The image used */
-          background-image: url('./img/ocean.JPG');
-
-          /* Create the parallax scrolling effect */
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-      }
-
-      .parallax-height-tall {
-        /* Full height */
-        height: 100%;
-      }
-
-      .parallax-height-short {
-        height: 50%
-      }
-
-      .emphasized-text {
-        color: var(--color4);
-      }
-
-      .banner1 {
-        min-height: 40%;
-        background-color: var(--color2);
-        font-size: 2em;
-        padding: 4em 3em 4em 3em;
-        text-align: center;
-      }
-      .banner1:hover {
-        background-color: var(--color3);
-      }
-
-      .btn-connect {
-        background-color: var(--color5);
-        border: var(--color5);
-      }
-      .btn-connect:hover {
-        background-color: var(--color4);
-        border: var(--color4);
-      }
-
-
-      .banner2 {
-        min-height: 50%;
-        /* background-image: url('./img/ocean.JPG'); */
-        /* background-color: white; */
-        font-size: 2em;
-        text-align: center;
-      }
-
-      /* Centered text */
-      .centered {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-      }
-
-      .horizontal-center {
-        margin-left: 40%;
-        margin-right: 50%;
-      }
-
-      .name-intro {
-        font-size: 8em;
-        color: white;
-      }
-
-      .section-header {
-        padding-top: 2em;
-        font-size: 4em;
-        color: white;
-        text-align: center;
-      }
-
-      .container {
-        position: relative;
-        width: 24px;
-        height: 24px;
-      }
-
-      .chevron {
-        position: absolute;
-        width: 28px;
-        height: 8px;
-        opacity: 0;
-        transform: scale3d(0.5, 0.5, 0.5);
-        animation: move 3s ease-out infinite;
-      }
-
-      .chevron:first-child {
-        animation: move 3s ease-out 1s infinite;
-      }
-
-      .chevron:nth-child(2) {
-        animation: move 3s ease-out 2s infinite;
-      }
-
-      .chevron:before,
-      .chevron:after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 51%;
-        background: #fff;
-      }
-
-      .chevron:before {
-        left: 0;
-        transform: skew(0deg, 30deg);
-      }
-
-      .chevron:after {
-        right: 0;
-        width: 50%;
-        transform: skew(0deg, -30deg);
-      }
-
-      @keyframes move {
-        25% {
-          opacity: 1;
-
-        }
-        33% {
-          opacity: 1;
-          transform: translateY(30px);
-        }
-        67% {
-          opacity: 1;
-          transform: translateY(40px);
-        }
-        100% {
-          opacity: 0;
-          transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-        }
-      }
-
-      @-webkit-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-      }
-
-      .text {
-        display: block;
-        /* margin-top: 75px;
-        margin-left: -30px; */
-        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-        color: #fff;
-        white-space: nowrap;
-        /* opacity: .25; */
-        /* animation: pulse 2s linear alternate infinite; */
-      }
-
-      @keyframes pulse {
-        to {
-          opacity: 1;
-        }
-      }
-
-      .zoom {
-        display: inline-block;
-        padding: auto;
-        background-color: var(--color2);
-        transition: transform .3s;
-        width: 200px;
-        height: 200px;
-        margin: 2em 2em;
-      }
-
-      .zoom:hover {
-        background-color: var(--color3);
-        -ms-transform: scale(2); /* IE 9 */
-        -webkit-transform: scale(2); /* Safari 3-8 */
-        transform: scale(2);
-      }
-    </style>
-
+    <script type = "text/javascript" src="js/index.js"></script>
+    <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
   </head>
-  <body>
+  <body onload="typeName()">
     <div class="parallax parallax-height-tall">
       <div class="name-intro centered">
         <img src="./img/profile.jpg" alt="Profile" class="profile">
-        <div class="text">
-          hi, i'm selina feng
-        </div>
+        <div id="name-text" class="text"></div>
         <div class="container">
           <div class="chevron"></div>
           <div class="chevron"></div>
@@ -275,7 +54,7 @@
 
     <div class="banner1">
       <p>
-        Hello! My name is <span class="emphasized-text">Selina</span>, and I'm sophomore at <span class="emphasized-text">UC Berkeley</span> studying
+        Hello! My name is <span class="emphasized-text">Selina Feng</span> and I'm a sophomore at <span class="emphasized-text">UC Berkeley</span> studying
         <span class="emphasized-text">Computer Science</span>. I'm passionate about leveraging technology to expand horizons for everyone
         and changing the way that ideas are exchanged.<br><br>
       </p>
@@ -308,17 +87,104 @@
     </div>
 
     <div class="banner2">
-      <div class="zoom text">
-        <p style="font-size: 0.5em; ">CLASSES</p>
-      </div>
-      <div class="zoom text">
-        <p>CODEBASE</p>
-      </div>
-      <div class="zoom text">
-        <p>CAL HACKS</p>
-      </div>
-      <div class="zoom text">
-        <p>INTERNING</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4" style="background-color:var(--color3)">
+            <div class="align-items-center"
+            style="max-width:400px;float: none; margin: 0 auto;margin-top:3em;margin-bottom:3em;">
+              <div style="font-size:30px">
+                Academics
+              </div>
+              <div style="max-width:400px;height:500px;overflow-y:scroll;font-size:20px;">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS 61A</h5>
+                      <small class="text-muted">Fall 2017</small>
+                    </div>
+                    <p class="mb-1">Structure and Interpretation of Computer Programs</p>
+                    <small class="text-muted">Python, SQL, Scheme</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS 61B</h5>
+                      <small class="text-muted">Spring 2018</small>
+                    </div>
+                    <p class="mb-1">Data Structures</p>
+                    <small class="text-muted">Java, sorting, algorithms</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS 70</h5>
+                      <small class="text-muted">Fall 2018</small>
+                    </div>
+                    <p class="mb-1">Discrete Math and Probability Theory</p>
+                    <small class="text-muted">proofs, theorems, probability</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS C8</h5>
+                      <small class="text-muted">Fall 2018</small>
+                    </div>
+                    <p class="mb-1">Foundations of Data Science</p>
+                    <small class="text-muted">statistical inference, programming, real-world data analysis</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">EE 16A</h5>
+                      <small class="text-muted">Fall 2017</small>
+                    </div>
+                    <p class="mb-1">Designing Information Devices and Systems I</p>
+                    <small class="text-muted">circuits, op-amps, linear algebra</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">EE 16B</h5>
+                      <small class="text-muted">Fall 2018</small>
+                    </div>
+                    <p class="mb-1">Designing Information Devices and Systems II</p>
+                    <small class="text-muted">circuits, transistors, differential equations</small>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">CS 198</h5>
+                      <small class="text-muted">Fall 2017</small>
+                    </div>
+                    <p class="mb-1">Ruby on Rails DeCal</p>
+                    <small class="text-muted">student taught class on RoR web development</small>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8" style="background-color:var(--color4);">
+            <div class="internship-row row">
+              <div class="internship col-sm-8">
+                <div class="idk" style="display:inline-block">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1" style="float:left;">Internship</h5>
+                    <small class="text-muted">Jun. 2018 - Aug. 2018</small>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Full Stack Engineering Intern at RaiseMe</h4>
+                    <small class="text-muted" style="float:left; text-align:left;">
+                      	Create a tool that classifies and standardizes the names of extracurricular activities, helping 1,300,000 students and 285 college partners connect to award students with scholarships for college<br>
+                      	Write and run scripts that updated data in the production database<br>
+                      	Update sign-up process for student users in accordance with European GDPR regulations<br>
+                      	Create an accessible user experience for users via front-end development with React and HTML/CSS<br>
+                      	Technologies used: Ruby on Rails, React, Node.js, MongoDB
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8" style="background-color:lavender;">
+                HELLO HELLO HELLO 2
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

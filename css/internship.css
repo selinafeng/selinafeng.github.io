@@ -1,0 +1,17 @@
+.internship {
+  max-width:700px;
+  float: none;
+  margin: 0 auto;
+  margin-top:3em;
+  margin-bottom:3em;
+  border-color:var(--color4);
+  border-width:thick;
+  background-color:white;
+  padding:20px;
+}
+.idk::before {
+  max-height: 100px;
+  max-width: 100px;
+  content: url("../img/raiseme-logo.png");
+  display: inline-block;
+}

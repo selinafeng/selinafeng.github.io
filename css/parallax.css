@@ -1,0 +1,30 @@
+.parallax {
+    /* The image used */
+    background-image: url('../img/Selina_Swing.JPG');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('../img/ocean.JPG');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-height-tall {
+  /* Full height */
+  height: 100%;
+}
+
+.parallax-height-short {
+  height: 50%
+}
