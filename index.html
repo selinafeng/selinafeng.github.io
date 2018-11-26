@@ -2,6 +2,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="assets/scripts/script.js"></script>
   </head>
@@ -9,14 +10,98 @@
     <div id="modal-container">
       <div class="modal-background">
         <div class="modal">
-          <h2>I'm a Modal</h2>
-          <p>Hear me roar.</p>
+          <div id="academics-modal" class="modal-content hidden">
+            <h2>Academics</h2>
+            <h3>Here are some classes I've taken:</h3>
+            <ul>
+              <li><span class="blue-highlight">Data Structures (CS 61B)</span><br /></li>
+              <li><span class="blue-highlight">Web Design</span><br /></li>
+              <li><span class="blue-highlight">Ruby on Rails</span><br /></li>
+              <li><span class="blue-highlight">Structure & Interpretation of Computer Programs (CS 61A)</span><br /></li>
+              <li><span class="blue-highlight">Intro to Data Science (CS C8)</span><br /></li>
+              <li><span class="blue-highlight">Circuits & Linear Algebra I (EE 16A)</span><br /></li>
+              <li><span class="blue-highlight">Circuits & Linear Algebra II (EE 16B)</span><br /></li>
+            </ul>
+            <h3 class="color-accent">Next up... (Spring 2019)</h3>
+            <ul>
+              <li><span class="blue-highlight">Algorithms (CS 170)</span><br /></li>
+              <li><span class="blue-highlight">Computer Architecture (CS 61C)</span><br /></li>
+            </ul>
+          </div>
+          <div id="work-experience-modal" class="modal-content hidden">
+            <h2>Work Experience</h2>
+            <div id="work-experience-container">
+              <div class="experience">
+                <h3>RaiseMe</h3>
+                <p class="position color-accent">Full Stack Engineering Intern (Summer 2018)</p>
+                <p>
+                  > Technologies used: Ruby on Rails, React, MongoDB, Python (pandas, tabula-py), HTML/CSS
+                </p>
+                <p>
+                  > Designed and implemented a classifier to standardize names of extracurricular activities, improving college scholarship awards for 1.3M students
+                </p>
+                <p>
+                  > Created an accessible user experience for users via frontend development with React and HTML/CSS
+                </p>
+              </div>
+              <div class="experience">
+                <h3>Salesforce</h3>
+                <p class="position color-accent">Software Engineering Intern (Summer 2019)</p>
+                <p>
+                  Coming soon!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="extracurricular-modal" class="modal-content hidden">
+            <h2>Extracurricular</h2>
+            <p>Outside of class, I'm a...</p>
+            <a href="https://codebase.berkeley.edu"><h3 class="color-accent">CodeBase Developer</h3></a>
+            <ul>
+              <li>
+                Build spam classification machine learning models for Zumper, a full-service housing website
+              </li>
+              <li>
+                Create a web application to display and interact with model results
+              </li>
+            </ul>
+            <a href="https://calhacks.io"><h3 class="color-accent">Cal Hacks Director</h3></a>
+            <ul>
+              <li>
+                Organize logistics, tech, and sponsorship for the largest collegiate hackathon in the United States with 2200+ attendees
+              </li>
+              <li>
+                Raise $300,000 from 30+ corporate sponsors with APIs and workshops
+              </li>
+              <li>
+                Host an inclusive technology speaker series for diversity initiative
+              </li>
+            </ul>
+          </div>
+          <div id="projects-modal" class="modal-content hidden">
+            <h2>Projects</h2>
+            <p>
+              Check out some cool projects that I've worked on!
+            </p>
+            <span class="blue-highlight"><h3>CodeDoor</h3></span>
+            <p>
+              Worked with a 9-person team to create a <span class="color-accent">Django</span> web application where club members can share experiences about companies that they have interned for
+            </p>
+            <span class="blue-highlight"><h3>Adopt Don't Shop</h3></span>
+            <p>
+              Worked with a 4-person team to create a <span class="color-accent">Ruby on Rails</span> web application for animal lovers to adopt and “favorite” pets posted by animal shelters
+            </p>
+            <span class="blue-highlight"><h3>Inspire</h3></span>
+            <p>
+              Worked with a 4-person team to develop an <span class="color-accent">Android</span> application supporting victims of cyberbullying by connecting them with others in similar situations
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="header">
-        <h1>hi, i'm <span class="parallax">selina</span></h1>
+    <div id="container">
+      <div id="header" class="mast__header">
+        <h1 class="mast__title js-spanize">Hi, I'm <span id="selina" class="color-accent">Selina!</span></h1>
         <hr>
         <p>
           tagline tagline tagline
@@ -32,10 +117,10 @@
             <div id="work-experience" class="element">
               <img src="assets/images/work-experience.png" height="130px"/>
             </div>
-            <div id="links" class="element">
-              <div class="links-main">
-                Links
-              </div>
+            <div id="links">
+              <a href="https://github.com/selinafeng"><i id="github" class="fab fa-github-square"></i></a>
+              <a href="http://www.linkedin.com/in/selina-feng"><i id="linkedin" class="fab fa-linkedin"></i></a>
+              <a href="assets/Selina_Feng_Resume.pdf"><i id="resume" class="fas fa-paperclip"></i></a>
             </div>
           </div>
           <div class="row">
@@ -46,7 +131,9 @@
               <img src="assets/images/coffee.jpg" height="100px"/>
             </div>
             <div id="extracurricular" class="element">
-              Extracurricular
+              <p>
+                Extracurricular
+              </p>
             </div>
           </div>
         </div>
