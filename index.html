@@ -1,93 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Selina Feng Website</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/stylish-portfolio.min.css" >
-    <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/parallax.css">
-    <link rel="stylesheet" type="text/css" href="css/images.css">
-    <link rel="stylesheet" type="text/css" href="css/chevron-animations.css">
-    <link rel="stylesheet" type="text/css" href="css/banner.css">
-    <link rel="stylesheet" type="text/css" href="css/activities.css">
-    <link rel="stylesheet" type="text/css" href="css/internship.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script type = "text/javascript" src="js/index.js"></script>
-    <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/script.js"></script>
   </head>
-  <body onload="typeName()">
-    <div class="parallax parallax-height-tall">
-      <div class="name-intro centered">
-        <img src="./img/profile.jpg" alt="Profile" class="profile">
-        <div id="name-text" class="text"></div>
-        <div class="container">
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <span class="text"></span>
+  <body>
+    <div id="modal-container">
+      <div class="modal-background">
+        <div class="modal">
+          <h2>I'm a Modal</h2>
+          <p>Hear me roar.</p>
         </div>
       </div>
     </div>
-
-    <div class="banner1">
-      <div class="intro-text">
+    <div class="container">
+      <div class="header">
+        <h1>hi, i'm <span class="parallax">selina</span></h1>
+        <hr>
         <p>
-          Hello! My name is <span class="emphasized-text">Selina Feng</span> and I'm a sophomore at <span class="emphasized-text">UC Berkeley</span> studying
-          <span class="emphasized-text">Computer Science</span>. I'm passionate about leveraging technology to expand horizons for everyone
-          and changing the way that ideas are exchanged.<br><br>
+          tagline tagline tagline
         </p>
-        <div style="padding: 10px">
-          <p>Let's connect!</p>
+      </div>
+      <div class="elements">
+        <div id="academics" class="element">
+          <img src="assets/images/academics.png" height="400px"/>
         </div>
-        <span>
-          <a href="https://www.linkedin.com/in/selina-feng" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg btn-connect" role="button">
-            <span class="fa fa-linkedin-square"></span>
-            &nbsp;LinkedIn
-          </a>
-          <a href="https://github.com/selinafeng" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg btn-connect" role="button">
-            <span class="fa fa-github"></span>
-            &nbsp;GitHub
-          </a>
-          <a href="https://drive.google.com/file/d/1GdO3ATyUUoD5Nqa4bARCUDmr8i5EKnfO/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-lg btn-connect" role="button">
-            <span class="glyphicon glyphicon-paperclip"></span>
-            &nbsp;Resume
-          </a>
-          <a href="mailto:selina.feng@berkeley.edu" class="btn btn-info btn-lg btn-connect" role="button">
-            <span class="glyphicon glyphicon-envelope"></span>
-            &nbsp;Email Me
-          </a>
-        </span>
+
+        <div class="everything-but-academics">
+          <div class="row">
+            <div id="work-experience" class="element">
+              <img src="assets/images/work-experience.png" height="130px"/>
+            </div>
+            <div id="links" class="element">
+              <div class="links-main">
+                Links
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="projects" class="element">
+              <img src="assets/images/ipad.png" height="200px"/>
+            </div>
+            <div id="coffee">
+              <img src="assets/images/coffee.jpg" height="100px"/>
+            </div>
+            <div id="extracurricular" class="element">
+              Extracurricular
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    
-    <div class="banner3">
-
-    </div>
-
-    <div class="parallax parallax-height-short"></div>
-
   </body>
 </html>
