@@ -1,163 +1,35 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/scripts/script.js"></script>
-  </head>
-  <body>
-    <div id="modal-container">
-      <div class="modal-background">
-        <div class="modal">
-          <div id="academics-modal" class="modal-content hidden">
-            <h2>Academics</h2>
-            <h3>Here are some classes I've taken:</h3>
-            <ul>
-              <li><span class="blue-highlight">Algorithms (CS 170)</span><br /></li>
-              <li><span class="blue-highlight">Data Structures (CS 61B)</span><br /></li>
-              <li><span class="blue-highlight">Computer Architecture (CS 61C)</span><br /></li>
-              <li><span class="blue-highlight">Databases (CS 186)</span><br /></li>
-              <li><span class="blue-highlight">Data Science (CS 100)</span><br /></li>
-              <li><span class="blue-highlight">Web Design</span><br /></li>
-              <li><span class="blue-highlight">Ruby on Rails</span><br /></li>
-              <li><span class="blue-highlight">Structure & Interpretation of Computer Programs (CS 61A)</span><br /></li>
-              <li><span class="blue-highlight">Circuits & Linear Algebra (EE 16A&amp;B)</span><br /></li>
-            </ul>
-            <h3 class="color-accent">Next up... (Spring 2020)</h3>
-            <ul>
-              <li><span class="blue-highlight">Computer Security (CS 161)</span><br /></li>
-              <li><span class="blue-highlight">Artificial Intelligence (CS 188)</span><br /></li>
-            </ul>
-          </div>
-          <div id="work-experience-modal" class="modal-content hidden">
-            <h2>Work Experience</h2>
-            <div id="work-experience-container">
-              <div class="experience">
-                <h3>RaiseMe</h3>
-                <p class="position color-accent">Full Stack Engineering Intern (Summer 2018)</p>
-                <div class="overlay">
-                  <h3>RaiseMe</h3>
-                  <ul>
-                    <li>
-                      Technologies used: Ruby on Rails, React, MongoDB, Python (pandas, tabula-py), HTML/CSS
-                    </li>
-                    <li>
-                      Designed and implemented a classifier to standardize names of extracurricular activities, improving college scholarship awards for 1.3M students
-                    </li>
-                    <li>
-                      Created an accessible user experience for users via frontend development with React and HTML/CSS
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="experience">
-                <h3>Salesforce</h3>
-                <p class="position color-accent">Software Engineering Intern (Summer 2019)</p>
-                <div class="overlay">
-                  <h3>Salesforce</h3>
-                  <ul>
-                    <ul>
-                      <li>
-                        Technologies used: Java, Selenium, Appium
-                      </li>
-                      <li>
-                        Improve an automated testing tool that exposes elusive bugs by randomly interacting with the user interface
-                      </li>
-                      <li>
-                        Enable automated testing on the mobile web view and iOS app, improving experience for all mobile Sales Cloud users
-                      </li>
-                    </ul>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="extracurricular-modal" class="modal-content hidden">
-            <h2>Extracurricular</h2>
-            <p>Outside of class, I'm a...</p>
-            <a href="https://codebase.berkeley.edu"><h3 class="color-accent">CodeBase Developer</h3></a>
-            <ul>
-              <li>
-                Build spam classification machine learning models for Zumper, a full-service housing website
-              </li>
-              <li>
-                Create a web application to display and interact with model results
-              </li>
-            </ul>
-            <a href="https://calhacks.io"><h3 class="color-accent">Cal Hacks Director</h3></a>
-            <ul>
-              <li>
-                Organize logistics, tech, and sponsorship for the largest collegiate hackathon in the United States with 2200+ attendees
-              </li>
-              <li>
-                Raise $300,000 from 30+ corporate sponsors with APIs and workshops
-              </li>
-              <li>
-                Host an inclusive technology speaker series for diversity initiative
-              </li>
-            </ul>
-          </div>
-          <div id="projects-modal" class="modal-content hidden">
-            <h2>Projects</h2>
-            <p>
-              Check out some cool projects that I've worked on!
-            </p>
-            <span class="blue-highlight"><h3>CodeDoor</h3></span>
-            <p>
-              Worked with a 9-person team to create a <span class="color-accent">Django</span> web application where club members can share experiences about companies that they have interned for
-            </p>
-            <span class="blue-highlight"><h3>Adopt Don't Shop</h3></span>
-            <p>
-              Worked with a 4-person team to create a <span class="color-accent">Ruby on Rails</span> web application for animal lovers to adopt and “favorite” pets posted by animal shelters
-            </p>
-            <span class="blue-highlight"><h3>Inspire</h3></span>
-            <p>
-              Worked with a 4-person team to develop an <span class="color-accent">Android</span> application supporting victims of cyberbullying by connecting them with others in similar situations
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="container">
-      <div id="header" class="mast__header">
-        <h1 class="mast__title js-spanize">Hi, I'm <span id="selina" class="color-accent">Selina!</span></h1>
-        <hr>
-        <p>
-          Nice to meet you!
-        </p>
-      </div>
-      <div class="elements">
-        <div id="academics" class="element">
-          <img src="assets/images/academics.png" height="400px"/>
-        </div>
+<head>
+  <title>Selina Feng</title>
+  <link rel="stylesheet" type="text/css" href="assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="container">
+    <div><h1>Selina Feng</h1></div>
 
-        <div class="everything-but-academics">
-          <div class="row">
-            <div id="work-experience" class="element">
-              <img src="assets/images/work-experience.png" height="130px"/>
-            </div>
-            <div id="links">
-              <a href="https://github.com/selinafeng"><i id="github" class="fab fa-github-square"></i></a>
-              <a href="http://www.linkedin.com/in/selina-feng"><i id="linkedin" class="fab fa-linkedin"></i></a>
-              <a href="assets/Selina_Feng_Resume.pdf"><i id="resume" class="fas fa-paperclip"></i></a>
-            </div>
-          </div>
-          <div class="row">
-            <div id="projects" class="element">
-              <img src="assets/images/ipad.png" height="200px"/>
-            </div>
-            <div id="coffee">
-              <img src="assets/images/coffee.jpg" height="100px"/>
-            </div>
-            <div id="extracurricular" class="element">
-              <p>
-                Extracurricular
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="bio">
+      ⮕ Studying <span class="pink-highlight">Computer Science</span> at UC Berkeley and graduating in Spring 2021. 
     </div>
-  </body>
+    <div class="bio">
+      ⮕ Currently a Software Engineering Intern at 
+        <span class="pink-highlight"><a href="https://stripe.com">Stripe</a></span> 
+        (past: <span class="pink-highlight"><a href="https://www.salesforce.com/">Salesforce</a></span>, 
+        <span class="pink-highlight"><a href="https://www.raise.me/">RaiseMe</a></span>).
+    </div>
+    <div class="bio">
+      ⮕ Involved in 
+      <span class="pink-highlight"><a href="http://codebase.berkeley.edu/">Codebase</a></span>, 
+      <span class="pink-highlight"><a href="https://csmentors.berkeley.edu/#/">Computer Science Mentors</a></span>, and 
+      <span class="pink-highlight"><a href="http://calhacks.io/">Cal Hacks</a></span>.
+    </div>
+
+    <div class="links">
+      <span class="blue-highlight"><a href="http://selinafeng.me/assets/Selina_Feng_Resume.pdf">Resume</a></span> · 
+      <span class="blue-highlight"><a href="https://www.linkedin.com/in/selina-feng/">LinkedIn</a></span> · 
+      <span class="blue-highlight"><a href="https://github.com/selinafeng">GitHub</a></span>
+    </div>
+  </div>
+</body>
 </html>
